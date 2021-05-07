@@ -1,85 +1,103 @@
+/*custom-font*/
+@font-face {
+      font-family: titling-regular;
+      src: url(font/built-titling.regular.ttf);
+}
+
+@font-face {
+      font-family: titling-bold;
+      src: url(font/built-titling.bold.ttf);
+}
+
 body{
-	background-image: url(img/sunnybg.jpg);
-	background-size: cover
+	background-image: url(img/default.jpg);
 }
 
 h1{
-	padding-top: 50px;
+	font-family: titling-bold;
+	margin-top: 40px;
+	text-align: center;
 	font-size: 50pt;
-	font-weight: 700;
-	color: #582233;
-	text-shadow: 2px 4px rgba(0,0,0, 0.3);
+	text-shadow: 1px 1px 2px black, 0 0 25px #eae9ea, 0 0 5px #f0f0f0;
 }
-/*for weather status icon*/
-img{
-	height: 150px;
-	width: auto;
-	padding-bottom: 10px;
-	margin-top: -20px;
+
+h2{
+	font-family: titling-bold;
+	text-align: center;
+	text-shadow: 1px 1px 2px black, 0 0 25px #eae9ea, 0 0 5px #f0f0f0;
+}
+
+.container{
+	height: 500px;
+}
+/*weather info section*/
+
+
+.col-01{
+	background-color: #444444;
+	opacity: 0.9;
+	color: #FFFFFF;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 10px 10px rgba(0,0,0, 0.3);
+}
+
+.col-02{
+	height: 500px;
+	border-radius: 10px;
+}
+
+.row-bg{
+	padding: 30px;
+	line-height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(255,255,255, 0.4);
+}
+/*weather content section*/
+.weather-content{
+	font-family: titling-regular;
+	line-height: 4rem;
+	margin-top:  30px;
+	font-size: 30pt;
+	text-shadow: 2px 4px rgba(0,0,0, 0.3);
 }
 
 .city{
-	font-size: 20pt;
+	font-size: 45pt;
 }
 
-/*for weather status wording*/
-#weather{
+
+
+/*weather status section*/
+.weather-status{
+	font-family: titling-bold;
+	margin-top:  100px;
 	font-size: 50pt;
-	text-shadow: 2px 4px rgba(0,0,0, 0.3);
+	text-shadow: 1px 1px 2px black, 0 0 25px #eae9ea, 0 0 5px #f0f0f0;
+}
+
+/*for weather status icon*/
+img{
+	height: 250px;
+	width: auto;
+	padding-bottom: 10px;
 }
 
 
-
-.app-box2{
-	width: 50vh;
-	margin: 100px;
-	background-color: rgba(240,248,255, 0.6);
-	padding: 20px;
-	border-radius: 10px;
-}
-
-.app-box1{
-	width: 50vh;
-	margin: 100px;
-	background-color: rgba(240,248,255, 0.6);
-	padding: 20px;
-	border-radius: 10px;
-}
-
+/*Search Box*/
 .input-box{
+	margin-top: 10px;
 	width: 100%;
 	background-color: rgba(240,248,255, 0.6);
 	border: none;
 	border-radius: 5px;
 	outline: none;
 	color: #582233;
-	font-size: 1.2rem;
+	font-size: 2rem;
 	height: 50px;
 	padding: 0 10px;
 	text-align: center;
 }
-
 .input-box:focus {
 	background-color: rgba(255,255,255);
-}
-
-.weather-content{
-	color: #582233;
-	padding: 20px;
-	line-height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(255,255,255, 0.6);
-	height: 30vh;
-}
-
-.temp{
-	font-size: 50pt;
-	font-weight: 700;
-	margin: 20px 0;
-	text-shadow: 2px 4px rgba(0,0,0, 0.3);
-}
-
-.min-max, .weather{
-	font-size: 12pt;
-	font-weight: 600;
 }
